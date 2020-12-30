@@ -6,12 +6,15 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "axios": "^0.21.1",
+    "bootstrap": "^4.5.3",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "dotenv": "^8.2.0",
     "ejs": "~2.6.1",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
+    "icons": "^1.0.0",
     "method-override": "^3.0.0",
     "mongodb": "^3.6.3",
     "mongoose": "^5.11.8",

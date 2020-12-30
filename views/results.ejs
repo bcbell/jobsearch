@@ -1,0 +1,14 @@
+<%-include('./partials/header')%>
+
+<body class="results">
+<a href="/"><button>Back</button></a>
+
+<% if(github){%>
+<%=github.company%>
+<%=github.type%>
+<%=github.location%>
+<%=github.title%>
+<%}else{%>
+    <h1>No results rendered</h1>
+<%}%>
+</body>

@@ -1,0 +1,35 @@
+
+  <%-include('./partials/header')%>
+  
+  <body class='cover'>
+    <header class="cover">
+    <h1>🐝  <%= title %></h1>
+    <!-- <p>Welcome to <%= title %></p> -->
+   </header>
+   <form method="POST" name='term' action="/results" class=coverSearch>
+   <input type="text" name="term" class="form-control" id='inputCover' placeholder="Search by term">
+   <button type="submit" class="coverSearch"> 🐝 Search </button>
+  </form>
+
+
+ <% if(position){%> 
+  <div class="results">
+    
+    <h2>Search Results</h2>
+
+    <% position.forEach(function(position){%>
+  <div class="aresult">
+   <p>Title:  <%= position.title%></p>
+   <p>Company: <%= position.company%></p> 
+   <p>Location: <%= position.location%></p>
+   <p class="results"> Type: <%= position.type%></p>
+   <% })%>
+</div>
+    <%}else{%>
+        <!-- <h1>No results rendered</h1> -->
+    <%}%>
+
+  </div>
+  
+
+  <%-include('./partials/footer')%>
