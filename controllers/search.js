@@ -10,7 +10,7 @@ function index(req, res){
 }
 
 function jobQuery(req, res){
-    axios.get(`https://jobs.github.com/positions.json?page=1&${req.body.query}`)
+    axios.get(`https://jobs.github.com/positions.json?description=${req.body.description}&full_time=false&location=${req.body.location}`)
     .then((response)=>{
         res.render('results', {title: "The Job Buzz ", position: response.data})
 })

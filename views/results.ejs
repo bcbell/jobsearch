@@ -4,19 +4,19 @@
 <a href="/"><button>Return</button></a>
 <% if(position){%> 
     <div class="results">
-      
-      <h2>Search Results</h2>
-  
+        
       <% position.forEach(function(position){%>
     <div class="aresult">
+
      <a href="<%=position.url%>"><p><strong><h3><%= position.title%></h3></strong></a></p>
      <p><a href="<%=position.company_url%>"><%= position.company%></a></p> 
      <p><%= position.location%>(<%= position.type%>)</p>
     <%-position.description%>
-     <p class="results"><a href='<%=position.how_to_apply%>'> Apply Here</a></p>
+     <p class="results"><a href='<%=position.how_to_apply%>'><button>Apply Here</button> </a></p>
+    </div>
      <% })%>
-  </div>
-      <%}else{%>
+  
+     
           <!-- <h1>No results rendered</h1> -->
       <%}%>
   
