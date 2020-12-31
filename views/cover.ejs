@@ -3,34 +3,22 @@
   
   <body class='cover'>
     <header class="cover">
-    <h1>🐝  <%= title %></h1>
+    <h1>  <%= title %></h1>
     <!-- <p>Welcome to <%= title %></p> -->
    </header>
    <form method="POST" name='term' action="/results" class=coverSearch>
-   <input type="text" name="description" class="form-control" id='inputCover' placeholder="What">
-   <input type="text" name="location" class="form-control" id='inputCover' placeholder="Where">
-   <button type="submit" class="coverSearch"> 🐝 Search </button>
+  <div class="what">
+    <label>🔍</label>
+    <input aria-label="description" type="text" name="description" id='what' placeholder="Job title or keyword">
+  </div>
+   
+  <div class="where">
+    <label>🌎 </label>
+    <input type="text" name="location"  id='where' placeholder="City, state, or zip code"> 
+  </div>
+   <button type="submit" class="coverSearch"> Search </button>
   </form>
 
-
- <% if(position){%> 
-  <div class="results">
-    
-    <h2>Search Results</h2>
-
-    <% position.forEach(function(position){%>
-  <div class="aresult">
-   <p>Title:  <%= position.title%></p>
-   <p>Company: <%= position.company%></p> 
-   <p>Location: <%= position.location%></p>
-   <p class="results"> Type: <%= position.type%></p>
-   <% })%>
-</div>
-    <%}else{%>
-        <!-- <h1>No results rendered</h1> -->
-    <%}%>
-
-  </div>
   
 
   <%-include('./partials/footer')%>
