@@ -13,9 +13,11 @@ __Final__
 
 ![Logo](https://i.imgur.com/OWSASHX.png)
 
-![DemoImage](https://i.imgur.com/nIGZbLv.png)
+![Background]{https://i.imgur.com/yHt00lB.png}
 
-![DemoImage](https://i.imgur.com/0La7ubj.png)
+![DemoImage](https://i.imgur.com/kTRBhAl.png)
+
+![DemoImage](https://i.imgur.com/9NOlk6k.png)
 
 
 
@@ -34,4 +36,5 @@ __Technologies Used__
 - Postman
 - Imgur
 - GitHub Jobs
+- VS Code
 

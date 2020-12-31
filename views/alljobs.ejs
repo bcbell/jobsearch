@@ -4,7 +4,6 @@
     
 
 
-
     <div class="alljobs">
         <% position.forEach(function(position){%>
       <div class="theresult">
@@ -13,7 +12,7 @@
        <p><a href="<%=position.company_url%>"><%= position.company%></a></p> 
        <p><%= position.location%>(<%= position.type%>)</p>
       <%-position.description%>
-       <p class="results"><a href='<%=position.how_to_apply%>'><button class="alljobs">Apply Here</button> </a></p>
+       <p class="results"><a href='<%=position.url%>'><button class="alljobs">Apply Here</button> </a></p>
       </div>
        <% })%>
     </div>

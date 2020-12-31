@@ -1,10 +1,11 @@
 /* Scrollbar */
 ::-webkit-scrollbar{
-  width: 70px;
+  width: 40px;
+  min-height: 10px;
+  background-color: #d84424;
 }
 ::-webkit-scrollbar-track{
-  box-shadow: #d84424 inset 0 0 5px;
-  border-radius: 50px;
+  box-shadow: #d84424 inset 0 0 20px;
 }
 ::-webkit-scrollbar-thumb{
   background: #ffde59;
@@ -26,8 +27,14 @@
   font-variant-caps: all-small-caps;
   font-size: 25px;
   position: fixed;
-  text-align: right;
+  text-align: left;
+  justify-content: right;
   -webkit-text-stroke: white 1px ;
+  top: 0;
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  padding: 0 20px;
 }
 .nav{
   background-color: #ffde5999 ;
@@ -35,6 +42,15 @@
 }
 .nav-item{
   text-align: right;
+}
+div.container,.nav-link{
+  background-color: #d84424;
+  position: fixed;
+  top: 0;
+  height: 100px;
+  line-height: 50px;
+  width: 100%;
+  padding: 0 20px;
 }
 /* Footer */
 #footer{
@@ -47,8 +63,12 @@
   position: fixed;
   left: 0;
   bottom: 0;
-  width: 100%;
   font-weight: bold;
+  height: 30px;
+  line-height: 50px;
+  width: 100%;
+  padding: 0 20px;
+  margin-bottom: 10px;
 }
 /* Page: Cover */
 body.cover {
@@ -71,7 +91,7 @@ form.coverSearch{
 button.coverSearch{
   border-radius: 50%;
   background-color: #ebae4ced;
-  outline: none;
+  outline: none !important;
   margin-bottom: 13px;
   box-shadow: 0 2px #d84424;
   font-variant-caps: small-caps ;
@@ -122,19 +142,16 @@ body.alljobs{
   color: #d84424;
   background-color: #d84424;
   cursor: pointer;
-  overflow: hidden;
-  height: 100%;
+  height: 1000px;
+  overflow: scroll;
+  flex: 0;
 }
 div.alljobs{
   border-radius: 25px;
   text-align: justify;
-  position: absolute;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 70px;
+  margin-right: 70px;
   margin-top: 100px;
-  height: 1000px;
-  overflow: auto;
-  flex: 1;
 }
 div.theresult{
   background-color: white ;
@@ -152,7 +169,7 @@ div.theresult{
 button.alljobs{
 border-radius: 25px;
 background-color: #ebae4ced;
-outline: none;
+outline: none !important;
 margin-bottom: 13px;
 box-shadow: 0 2px #d84424;
 font-variant-caps: small-caps ;
@@ -182,19 +199,16 @@ body.results{
   color: #d84424;
   font-weight: bold;
   cursor: pointer;
-  overflow: hidden;
-  height: 100%;
+  height: 1000px;
+  overflow: scroll;
+  flex: 0;
 }
 div.results{
   border-radius: 25px;
   text-align: justify;
-  position: absolute;
   margin-left: 50px;
   margin-right: 50px;
   margin-top: 100px;
-  height: 1000px;
-  overflow: auto;
-  flex: 1;
 }
 div.aresult{
   background-color: rgba(250, 250, 234, 0.764);
@@ -219,7 +233,7 @@ p.results{
 button.results{
   border-radius: 25px;
   background-color: #ebae4ced;
-  outline: none;
+  outline: none !important;
   margin-bottom: 13px;
   box-shadow: 0 2px #d84424;
   font-variant-caps: small-caps ;
