@@ -1,12 +1,11 @@
 
-  <%-include('./partials/header')%>
-  
-  <body class='cover'>
-  
+<body class='cover'>
+   <%-include('./partials/header')%>
+   
    <form method="POST" name='term' action="/results" class=coverSearch>
   <div class="what">
     <label>🔍</label>
-    <input aria-label="description" type="text" name="description" id='what' placeholder="Job title or keyword">
+    <input aria-label="description" type="text" name="description" id='what' placeholder="Job title, company, or keyword">
   </div>
    
   <div class="where">
@@ -16,6 +15,7 @@
    <button type="submit" class="coverSearch"> Search </button>
   </form>
 
-  
-
   <%-include('./partials/footer')%>
+ </body>
+  
+ 

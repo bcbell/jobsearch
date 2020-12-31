@@ -1,7 +1,6 @@
 <%-include('./partials/header')%>
 
 <body class="results">
-<a href="/"><button>Return</button></a>
 <% if(position){%> 
     <div class="results">
         
@@ -12,7 +11,7 @@
      <p><a href="<%=position.company_url%>"><%= position.company%></a></p> 
      <p><%= position.location%>(<%= position.type%>)</p>
     <%-position.description%>
-     <p class="results"><a href='<%=position.how_to_apply%>'><button>Apply Here</button> </a></p>
+     <p class="results"><a href='<%=position.how_to_apply%>'><button class="results">Apply Here</button> </a></p>
     </div>
      <% })%>
   
@@ -21,5 +20,5 @@
       <%}%>
   
     </div>
-  <%-include('./partials/footer')%>  
+  
 </body>
