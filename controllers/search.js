@@ -2,7 +2,8 @@ const axios = require('axios')
 
 module.exports={
     index, 
-    jobQuery
+    jobQuery,
+    jobs
 }
 
 function index(req, res){
@@ -14,4 +15,11 @@ function jobQuery(req, res){
     .then((response)=>{
         res.render('results', {title: "The Job Buzz ", position: response.data})
 })
+}
+
+function jobs(req, res){
+    axios.get(`https://jobs.github.com/positions.json?page=1`)
+    .then((response)=>{
+        res.render('alljobs',{title: 'All Jobs', position: response.data})
+    })
 }
