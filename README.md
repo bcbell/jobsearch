@@ -11,7 +11,7 @@ __API__
 
 __Final__
 
-![Logo](https://i.imgur.com/OWSASHX.png)
+![Logo](https://i.imgur.com/yHt00lB.png)
 
 ![Background]{https://i.imgur.com/yHt00lB.png}
 
